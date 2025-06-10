@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Menu, X, MapPin, Phone, Globe } from 'lucide-react';
+import { Link } from 'react-router-dom';
 import labomecaLogo from '../assets/labomeca.png';
 
 const Header = () => {
@@ -12,7 +13,9 @@ const Header = () => {
         <div className="max-w-7xl mx-auto flex justify-between items-center">
           {/* Logo */}
           <div className="flex items-center">
-            <img src={labomecaLogo} alt="LabomecA" className="h-12" />
+            <Link to="/">
+              <img src={labomecaLogo} alt="LabomecA" className="h-12" />
+            </Link>
             <div className="ml-3 hidden md:block">
               <h1 className="text-xl font-bold text-[#F67122]">LABOMECA</h1>
               <p className="text-sm text-gray-400">Building Power</p>
@@ -21,12 +24,12 @@ const Header = () => {
 
           {/* Navigation Links - Desktop */}
           <div className="hidden md:flex items-center space-x-8">
-            <a href="/" className="text-white hover:text-[#F67122] transition-colors font-medium">
+            <Link to="/" className="text-white hover:text-[#F67122] transition-colors font-medium">
               Accueil
-            </a>
-            <a href="#about" className="text-white hover:text-[#F67122] transition-colors font-medium">
+            </Link>
+            <Link to="/historique" className="text-white hover:text-[#F67122] transition-colors font-medium">
               Historique
-            </a>
+            </Link>
             <div className="group relative">
               <a href="#services" className="text-white hover:text-[#F67122] transition-colors font-medium flex items-center">
                 Services
@@ -50,12 +53,12 @@ const Header = () => {
         {isMenuOpen && (
           <div className="md:hidden mt-4 bg-gray-900 rounded-lg p-4">
             <div className="flex flex-col space-y-4">
-              <a href="#home" className="text-white hover:text-[#F67122] transition-colors font-medium">
+              <Link to="/" className="text-white hover:text-[#F67122] transition-colors font-medium">
                 Accueil
-              </a>
-              <a href="#about" className="text-white hover:text-[#F67122] transition-colors font-medium">
+              </Link>
+              <Link to="/historique" className="text-white hover:text-[#F67122] transition-colors font-medium">
                 Historique
-              </a>
+              </Link>
               <a href="#services" className="text-white hover:text-[#F67122] transition-colors font-medium">
                 Services
               </a>
