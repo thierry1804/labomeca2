@@ -46,7 +46,7 @@ const Footer = () => {
 
           {/* Services */}
           <div>
-            <h4 className="text-xl font-bold mb-6 text-[#F67122]">Services</h4>
+            <h4 className="text-xl font-bold mb-6 text-[#F67122]">Autres prestations</h4>
             <ul className="space-y-3">
               <li><a href="#" className="text-gray-400 hover:text-white transition-colors">Location d'équipement</a></li>
               <li><a href="#" className="text-gray-400 hover:text-white transition-colors">Maintenance</a></li>

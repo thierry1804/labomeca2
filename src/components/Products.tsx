@@ -10,22 +10,22 @@ const Products = () => {
     {
       title: 'Usinage',
       image: usinage,
-      description: 'Pelles mécaniques robustes pour les opérations de construction et d\'exploitation minière'
+      description: 'LABOMECA exécute l\'usinage (tournage, fraisage, rectification) de pièces métalliques et réhabilite les composants de centrales hydro-électriques dans ses ateliers.'
     },
     {
       title: 'Chaudronerie Mécano-soudure',
       image: chaudronnerie,
-      description: 'Bulldozers puissants pour le terrassement et la préparation des chantiers'
+      description: 'Nous réalisons tous types de soudures, rechargements et zingage par projection, permettant des réparations efficaces sur site sans démontage.'
     },
     {
       title: 'Flexibles',
       image: flexibles,
-      description: 'Grues mobiles et tours pour les applications de levage lourd'
+      description: 'Depuis 13 ans, LABOMECA fabrique des flexibles hydrauliques sur mesure, essentiels pour le contrôle et la lubrification.'
     },
     {
       title: 'Groupes électrogènes',
       image: groupe,
-      description: 'Chargeuses frontales et sur pneus pour la manutention de matériaux'
+      description: 'LABOMECA propose un système GSM intégré permettant de contrôler et surveiller à distance votre générateur via SMS ou application, sans déplacement.'
     }
   ];
 

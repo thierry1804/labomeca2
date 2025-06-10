@@ -21,7 +21,7 @@ const Header = () => {
 
           {/* Navigation Links - Desktop */}
           <div className="hidden md:flex items-center space-x-8">
-            <a href="#home" className="text-white hover:text-[#F67122] transition-colors font-medium">
+            <a href="/" className="text-white hover:text-[#F67122] transition-colors font-medium">
               Accueil
             </a>
             <a href="#about" className="text-white hover:text-[#F67122] transition-colors font-medium">
