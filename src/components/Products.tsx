@@ -1,5 +1,6 @@
 import React from 'react';
 import { ArrowRight } from 'lucide-react';
+import groupe from '../assets/groupe-vente.jpg';
 
 const Products = () => {
   const productCategories = [
@@ -20,7 +21,7 @@ const Products = () => {
     },
     {
       title: 'Groupes électrogènes',
-      image: 'https://images.pexels.com/photos/1112080/pexels-photo-1112080.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop',
+      image: groupe,
       description: 'Chargeuses frontales et sur pneus pour la manutention de matériaux'
     }
   ];
