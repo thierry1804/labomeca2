@@ -10,7 +10,7 @@ const Services = () => {
     },
     {
       icon: <Truck className="w-12 h-12 text-[#F67122]" />,
-      title: 'Location d\'Équipement',
+      title: 'Location d\'équipement',
       description: 'Options de location flexibles pour projets à court et long terme avec des tarifs compétitifs.'
     },
     {
@@ -20,7 +20,7 @@ const Services = () => {
     },
     {
       icon: <Clock className="w-12 h-12 text-[#F67122]" />,
-      title: 'Service d\'Urgence',
+      title: 'Service d\'urgence',
       description: 'Services de réparation d\'urgence 24h/24 pour minimiser les temps d\'arrêt sur les projets critiques.'
     }
   ];
@@ -30,7 +30,7 @@ const Services = () => {
       <div className="max-w-7xl mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
-            Nos <span className="text-[#F67122]">Services</span>
+            Nos <span className="text-[#F67122]">prestations</span>
           </h2>
           <p className="text-xl text-gray-300 max-w-3xl mx-auto">
             Solutions complètes pour tous vos besoins en équipement lourd, de la vente et location à la maintenance et au support.

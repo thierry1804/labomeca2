@@ -1,22 +1,25 @@
 import React from 'react';
 import { ArrowRight } from 'lucide-react';
-import groupe from '../assets/groupe-vente.jpg';
+import groupe from '../assets/groupe-installation.jpg';
+import usinage from '../assets/usinage-cnc.jpg';
+import chaudronnerie from '../assets/chaudronnerie-service.jpg';
+import flexibles from '../assets/flexible.jpg';
 
 const Products = () => {
   const productCategories = [
     {
       title: 'Usinage',
-      image: 'https://images.pexels.com/photos/1624487/pexels-photo-1624487.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop',
+      image: usinage,
       description: 'Pelles mécaniques robustes pour les opérations de construction et d\'exploitation minière'
     },
     {
       title: 'Chaudronerie Mécano-soudure',
-      image: 'https://images.pexels.com/photos/1078884/pexels-photo-1078884.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop',
+      image: chaudronnerie,
       description: 'Bulldozers puissants pour le terrassement et la préparation des chantiers'
     },
     {
       title: 'Flexibles',
-      image: 'https://images.pexels.com/photos/162568/cranes-construction-site-lifting-crane-162568.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop',
+      image: flexibles,
       description: 'Grues mobiles et tours pour les applications de levage lourd'
     },
     {
@@ -42,7 +45,7 @@ const Products = () => {
           {productCategories.map((category, index) => (
             <div
               key={index}
-              className="group bg-gray-900 rounded-xl overflow-hidden hover:bg-gray-800 transition-all duration-300 border border-gray-700 hover:border-[#F67122]"
+              className="group bg-gray-900 rounded-xl overflow-hidden hover:bg-gray-800 transition-all duration-300 border border-gray-700 hover:border-[#F67122] flex flex-col"
             >
               <div className="relative overflow-hidden">
                 <img
@@ -52,17 +55,19 @@ const Products = () => {
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
               </div>
-              <div className="p-6">
+              <div className="p-6 flex-1 flex flex-col">
                 <h3 className="text-xl font-bold text-white mb-3 group-hover:text-[#F67122] transition-colors">
                   {category.title}
                 </h3>
                 <p className="text-gray-400 mb-4">
                   {category.description}
                 </p>
-                <button className="text-[#F67122] hover:text-[#F67122]/90 font-semibold flex items-center group-hover:translate-x-2 transition-transform">
-                  En savoir plus
-                  <ArrowRight size={16} className="ml-2" />
-                </button>
+                <div className="mt-auto">
+                  <button className="text-[#F67122] hover:text-[#F67122]/90 font-semibold flex items-center group-hover:translate-x-2 transition-transform">
+                    En savoir plus
+                    <ArrowRight size={16} className="ml-2" />
+                  </button>
+                </div>
               </div>
             </div>
           ))}
@@ -70,7 +75,7 @@ const Products = () => {
 
         <div className="text-center">
           <button className="bg-[#F67122] hover:bg-[#F67122]/90 text-white px-10 py-4 rounded-lg font-semibold text-lg transition-all duration-300 transform hover:scale-105">
-            Voir Tout l'Équipement
+            Voir tous nos services
           </button>
         </div>
       </div>
