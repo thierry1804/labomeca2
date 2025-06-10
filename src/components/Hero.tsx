@@ -1,5 +1,6 @@
 import React from 'react';
 import { ArrowRight } from 'lucide-react';
+import heroImage from '../assets/groupe-vente.jpg';
 
 const Hero = () => {
   return (
@@ -7,9 +8,9 @@ const Hero = () => {
       {/* Background Image */}
       <div className="absolute inset-0">
         <img
-          src="https://images.pexels.com/photos/1116302/pexels-photo-1116302.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080&fit=crop"
+          src={heroImage}
           alt="Heavy construction equipment"
-          className="w-full h-full object-cover opacity-60"
+          className="w-full h-full object-cover opacity-60 scale-x-[-1]"
         />
         <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/60 to-transparent"></div>
       </div>
@@ -18,26 +19,25 @@ const Hero = () => {
       <div className="relative z-10 max-w-7xl mx-auto px-4 py-32">
         <div className="max-w-3xl">
           <h1 className="text-5xl md:text-7xl font-bold leading-tight mb-8">
-            DISCOVER OUR HEAVY
+            <span className="text-2xl">DÉCOUVREZ NOS </span>
             <br />
-            <span className="text-orange-500">INDUSTRY EQUIPMENT</span>
+            <span className="text-[#F67122]">NOS SERVICES</span>
             <br />
-            FOR SALE & RENT
+            <span>& NOS ÉQUIPEMENTS INDUSTRIELS</span>
           </h1>
           
           <p className="text-xl md:text-2xl text-gray-300 mb-12 leading-relaxed">
-            High-performance equipment for your project needs. Our inventory 
-            includes top machinery for construction, mining, and more. Trust us for 
-            precision and reliability.
+            <strong className="text-[#F67122]">Services industriels complets pour vos projets les plus exigeants.</strong><br></br>
+            De l'étude à la maintenance, nous vous accompagnons à chaque étape.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-6">
-            <button className="group bg-orange-600 hover:bg-orange-700 text-white px-8 py-4 rounded-lg font-semibold text-lg transition-all duration-300 flex items-center justify-center transform hover:scale-105">
+            <button className="group bg-[#F67122] hover:bg-[#F67122]/90 text-white px-8 py-4 rounded-lg font-semibold text-lg transition-all duration-300 flex items-center justify-center transform hover:scale-105">
               <ArrowRight className="mr-2 group-hover:translate-x-1 transition-transform" size={20} />
-              View Products
+              Voir nos services
             </button>
             <button className="border-2 border-white hover:bg-white hover:text-black text-white px-8 py-4 rounded-lg font-semibold text-lg transition-all duration-300 transform hover:scale-105">
-              Get quotes for free
+              Obtenir un devis gratuit
             </button>
           </div>
         </div>
