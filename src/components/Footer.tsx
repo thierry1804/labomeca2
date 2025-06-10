@@ -13,7 +13,7 @@ const Footer = () => {
               <img src={labomecaLogo} alt="LabomecA" className="h-12" />
               <div className="ml-3">
                 <h3 className="text-xl font-bold">LABOMECA</h3>
-                <p className="text-sm text-gray-400">MACHINERY</p>
+                <p className="text-sm text-gray-400">Building Power</p>
               </div>
             </div>
             <p className="text-gray-400 mb-6">
@@ -34,13 +34,13 @@ const Footer = () => {
 
           {/* Products */}
           <div>
-            <h4 className="text-xl font-bold mb-6 text-[#F67122]">Produits</h4>
+            <h4 className="text-xl font-bold mb-6 text-[#F67122]">Services</h4>
             <ul className="space-y-3">
-              <li><a href="#" className="text-gray-400 hover:text-white transition-colors">Pelles Mécaniques</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-white transition-colors">Bulldozers</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-white transition-colors">Grues</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-white transition-colors">Chargeuses</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-white transition-colors">Tombereaux</a></li>
+              <li><a href="#" className="text-gray-400 hover:text-white transition-colors">Usinage</a></li>
+              <li><a href="#" className="text-gray-400 hover:text-white transition-colors">Chaudronnerie</a></li>
+              <li><a href="#" className="text-gray-400 hover:text-white transition-colors">Flexibles</a></li>
+              <li><a href="#" className="text-gray-400 hover:text-white transition-colors">Groupe</a></li>
+              <li><a href="#" className="text-gray-400 hover:text-white transition-colors">Solaires</a></li>
             </ul>
           </div>
 
@@ -48,11 +48,10 @@ const Footer = () => {
           <div>
             <h4 className="text-xl font-bold mb-6 text-[#F67122]">Services</h4>
             <ul className="space-y-3">
-              <li><a href="#" className="text-gray-400 hover:text-white transition-colors">Location d'Équipement</a></li>
+              <li><a href="#" className="text-gray-400 hover:text-white transition-colors">Location d'équipement</a></li>
               <li><a href="#" className="text-gray-400 hover:text-white transition-colors">Maintenance</a></li>
               <li><a href="#" className="text-gray-400 hover:text-white transition-colors">Réparations</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-white transition-colors">Fourniture de Pièces</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-white transition-colors">Formation</a></li>
+              <li><a href="#" className="text-gray-400 hover:text-white transition-colors">Fourniture de pièces</a></li>
             </ul>
           </div>
 
@@ -62,7 +61,7 @@ const Footer = () => {
             <ul className="space-y-4">
               <li className="flex items-center">
                 <Phone size={16} className="text-[#F67122] mr-3" />
-                <span className="text-gray-400">+33 1 23 45 67 89</span>
+                <span className="text-gray-400">(+261) 32 05 440 65</span>
               </li>
               <li className="flex items-center">
                 <Mail size={16} className="text-[#F67122] mr-3" />
@@ -71,8 +70,8 @@ const Footer = () => {
               <li className="flex items-start">
                 <MapPin size={16} className="text-[#F67122] mr-3 mt-1" />
                 <span className="text-gray-400">
-                  123 Rue de l'Industrie<br />
-                  75000 Paris, France
+                Lot 30 Andrefantsena Talatamaty<br />
+                Antananarivo 101, Madagascar
                 </span>
               </li>
             </ul>
