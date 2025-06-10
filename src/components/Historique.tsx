@@ -1,5 +1,6 @@
 import React from 'react';
 import LabomecaTimeline from './LabomecaTimeline';
+import ceo from '../assets/ceo.webp';
 
 const timelineData = [
   {
@@ -30,6 +31,14 @@ const Historique: React.FC = () => {
       <div className="container mx-auto px-4">
         <h1 className="text-4xl font-bold mb-8 text-center">Notre <span className="text-[#F67122]">histoire</span></h1>
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 max-w-7xl mx-auto">
+          <div className="relative overflow-hidden">
+            <img
+              src={ceo}
+              alt="CEO"
+              className="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-500"
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+          </div>
           <div className="space-y-6">
             <p className="text-lg leading-relaxed">
               <strong className="text-[#F67122]">Patrick Labouesse</strong>, fondateur de Labomeca a créé en 2002 à Antananarivo, son atelier d'usinage, c'est-à-dire de tournage, de fraisage et de rectification, en apportant ses connaissances et son savoir-faire acquis pendant 10 années à Heidelberg Allemagne dans le laboratoire EMBL de biologie moléculaire où il assurait la partie micromécanique.
