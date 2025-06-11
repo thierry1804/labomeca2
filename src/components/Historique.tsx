@@ -5,6 +5,7 @@ import usinageH from '../assets/atelier.jpg';
 import chaudronnerieH from '../assets/usinage-conventionnel.jpg';
 import equipeH from '../assets/hero-bg.jpg';
 import controleH from '../assets/groupe-distance.jpg';
+import { Link } from 'react-router-dom';
 
 const timelineData = [
   {
@@ -71,13 +72,14 @@ const Historique: React.FC = () => {
         </div>
       </div>
       {/* CTA flottant en bas à droite */}
+      <Link to="/contact">
       <button
         className="fixed bottom-8 right-8 z-50 bg-[#F67122] hover:bg-[#F67122]/90 text-white px-6 py-4 rounded-full shadow-lg font-bold text-lg transition-all duration-300 animate-bounce"
-        style={{ boxShadow: '0 4px 24px 0 rgba(0,0,0,0.25)' }}
-        onClick={() => window.location.href = '/contact'}
+          style={{ boxShadow: '0 4px 24px 0 rgba(0,0,0,0.25)' }}
       >
         Obtenir un devis gratuit
       </button>
+      </Link>
     </div>
   );
 };
