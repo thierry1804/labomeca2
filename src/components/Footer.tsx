@@ -1,4 +1,3 @@
-import React from 'react';
 import { Phone, Mail, MapPin, Facebook, Twitter, Linkedin } from 'lucide-react';
 import labomecaLogo from '../assets/labomeca.png';
 
@@ -17,7 +16,7 @@ const Footer = () => {
               </div>
             </div>
             <p className="text-gray-400 mb-6">
-              Fournisseur leader d'équipements industriels lourds pour les projets de construction, d'exploitation minière et d'infrastructure en France.
+              Spécialiste en usinage et chaudronnerie, nous fournissons des équipements industriels et services de maintenance pour vos projets à Madagascar.
             </p>
             <div className="flex space-x-4">
               <a href="#" className="text-gray-400 hover:text-[#F67122] transition-colors">

@@ -3,7 +3,7 @@ import { ArrowRight } from 'lucide-react';
 import heroImage from '../assets/groupe-vente.jpg';
 import { Link } from 'react-router-dom';
 
-const Hero = () => {
+const Hero = ({ ctaRef }: { ctaRef?: React.Ref<HTMLButtonElement> }) => {
   return (
     <section className="relative min-h-screen bg-black text-white overflow-hidden">
       {/* Background Image */}
@@ -38,7 +38,10 @@ const Hero = () => {
               Voir nos services
             </button>
             <Link to="/contact">
-              <button className="border-2 border-white hover:bg-white hover:text-black text-white px-8 py-4 rounded-lg font-semibold text-lg transition-all duration-300 transform hover:scale-105">
+              <button
+                ref={ctaRef}
+                className="border-2 border-white hover:bg-white hover:text-black text-white px-8 py-4 rounded-lg font-semibold text-lg transition-all duration-300 transform hover:scale-105"
+              >
                 Obtenir un devis gratuit
               </button>
             </Link>
