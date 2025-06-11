@@ -1,6 +1,7 @@
 import React from 'react';
 import { ArrowRight } from 'lucide-react';
 import heroImage from '../assets/groupe-vente.jpg';
+import { Link } from 'react-router-dom';
 
 const Hero = () => {
   return (
@@ -36,9 +37,11 @@ const Hero = () => {
               <ArrowRight className="mr-2 group-hover:translate-x-1 transition-transform" size={20} />
               Voir nos services
             </button>
-            <button className="border-2 border-white hover:bg-white hover:text-black text-white px-8 py-4 rounded-lg font-semibold text-lg transition-all duration-300 transform hover:scale-105">
-              Obtenir un devis gratuit
-            </button>
+            <Link to="/contact">
+              <button className="border-2 border-white hover:bg-white hover:text-black text-white px-8 py-4 rounded-lg font-semibold text-lg transition-all duration-300 transform hover:scale-105">
+                Obtenir un devis gratuit
+              </button>
+            </Link>
           </div>
         </div>
       </div>

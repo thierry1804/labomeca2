@@ -7,6 +7,7 @@ import Services from './components/Services';
 import TrustedClients from './components/TrustedClients';
 import Footer from './components/Footer';
 import Historique from './components/Historique';
+import ContactPage from './components/ContactPage';
 
 function Home() {
   return (
@@ -28,6 +29,7 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/historique" element={<Historique />} />
+            <Route path="/contact" element={<ContactPage />} />
           </Routes>
         </main>
         <Footer />

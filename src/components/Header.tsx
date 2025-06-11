@@ -31,12 +31,25 @@ const Header = () => {
               Historique
             </Link>
             <div className="group relative">
-              <a href="#services" className="text-white hover:text-[#F67122] transition-colors font-medium flex items-center">
+              <button className="text-white hover:text-[#F67122] transition-colors font-medium flex items-center focus:outline-none">
                 Services
                 <svg className="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
                 </svg>
-              </a>
+              </button>
+              <div className="absolute left-0 mt-2 w-64 bg-black border border-gray-800 rounded-lg shadow-lg opacity-0 group-hover:opacity-100 group-hover:pointer-events-auto pointer-events-none transition-opacity z-50">
+                <ul className="py-2">
+                  <li><a href="#" className="block px-6 py-2 text-white hover:text-[#F67122] transition-colors">Usinage</a></li>
+                  <li><a href="#" className="block px-6 py-2 text-white hover:text-[#F67122] transition-colors">Chaudronnerie</a></li>
+                  <li><a href="#" className="block px-6 py-2 text-white hover:text-[#F67122] transition-colors">Flexibles</a></li>
+                  <li><a href="#" className="block px-6 py-2 text-white hover:text-[#F67122] transition-colors">Groupes électrogènes</a></li>
+                  <li><a href="#" className="block px-6 py-2 text-white hover:text-[#F67122] transition-colors">Solaires</a></li>
+                  <li><a href="#" className="block px-6 py-2 text-white hover:text-[#F67122] transition-colors">Location d'équipement</a></li>
+                  <li><a href="#" className="block px-6 py-2 text-white hover:text-[#F67122] transition-colors">Maintenance</a></li>
+                  <li><a href="#" className="block px-6 py-2 text-white hover:text-[#F67122] transition-colors">Réparations</a></li>
+                  <li><a href="#" className="block px-6 py-2 text-white hover:text-[#F67122] transition-colors">Fourniture de pièces</a></li>
+                </ul>
+              </div>
             </div>
           </div>
 
@@ -59,9 +72,20 @@ const Header = () => {
               <Link to="/historique" className="text-white hover:text-[#F67122] transition-colors font-medium">
                 Historique
               </Link>
-              <a href="#services" className="text-white hover:text-[#F67122] transition-colors font-medium">
-                Services
-              </a>
+              <div>
+                <span className="block text-white font-medium mb-2">Services</span>
+                <ul className="pl-4 space-y-1">
+                  <li><a href="#" className="text-gray-300 hover:text-[#F67122] transition-colors">Usinage</a></li>
+                  <li><a href="#" className="text-gray-300 hover:text-[#F67122] transition-colors">Chaudronnerie</a></li>
+                  <li><a href="#" className="text-gray-300 hover:text-[#F67122] transition-colors">Flexibles</a></li>
+                  <li><a href="#" className="text-gray-300 hover:text-[#F67122] transition-colors">Groupes électrogènes</a></li>
+                  <li><a href="#" className="text-gray-300 hover:text-[#F67122] transition-colors">Solaires</a></li>
+                  <li><a href="#" className="text-gray-300 hover:text-[#F67122] transition-colors">Location d'équipement</a></li>
+                  <li><a href="#" className="text-gray-300 hover:text-[#F67122] transition-colors">Maintenance</a></li>
+                  <li><a href="#" className="text-gray-300 hover:text-[#F67122] transition-colors">Réparations</a></li>
+                  <li><a href="#" className="text-gray-300 hover:text-[#F67122] transition-colors">Fourniture de pièces</a></li>
+                </ul>
+              </div>
             </div>
           </div>
         )}
