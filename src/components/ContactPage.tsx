@@ -3,7 +3,7 @@ import { MapPin, Phone, Mail } from "lucide-react";
 
 const ContactPage = () => {
     return (
-        <div className="bg-black min-h-screen py-16">
+        <div className="bg-gray-950 min-h-screen py-16">
             <div className="max-w-7xl mx-auto px-4 flex flex-col md:flex-row gap-12 items-stretch">
                 {/* Coordonnées à gauche */}
                 <div className="flex-1 flex flex-col justify-center text-white md:pr-8">

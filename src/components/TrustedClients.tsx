@@ -30,7 +30,7 @@ const TrustedClients = () => {
   ];
 
   return (
-    <section className="bg-black py-16">
+    <section className="bg-gray-950 py-16">
       <div className="max-w-7xl mx-auto px-4">
         <div className="flex flex-row items-center gap-12 w-full">
           <div className="flex-shrink-0" style={{ minWidth: '320px' }}>

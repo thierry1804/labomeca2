@@ -36,7 +36,7 @@ const timelineData = [
 
 const Historique: React.FC = () => {
   return (
-    <div className="min-h-screen bg-black text-white py-16">
+    <div className="min-h-screen bg-gray-950 text-white py-16">
       <div className="container mx-auto px-4">
         <h1 className="text-4xl font-bold mb-8 text-center">Notre <span className="text-[#F67122]">histoire</span></h1>
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 max-w-7xl mx-auto items-stretch min-h-0">

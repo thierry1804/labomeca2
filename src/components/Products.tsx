@@ -30,7 +30,7 @@ const Products = () => {
   ];
 
   return (
-    <section className="bg-black py-20">
+    <section className="bg-gray-950 py-20">
       <div className="max-w-7xl mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">

@@ -70,7 +70,7 @@ const Hero = ({ ctaRef }: { ctaRef?: React.Ref<HTMLButtonElement> }) => {
   const [isTransitioning, setIsTransitioning] = useState(false);
   const [prevImage, setPrevImage] = useState(slides[0].image);
   const total = slides.length;
-  const transitionDuration = 400;
+  const transitionDuration = 500;
 
   // Autoplay
   useEffect(() => {
@@ -82,6 +82,7 @@ const Hero = ({ ctaRef }: { ctaRef?: React.Ref<HTMLButtonElement> }) => {
 
   // Transition helpers
   const handlePrev = () => {
+    if (isTransitioning) return;
     setIsTransitioning(true);
     setPrevImage(slides[current].image);
     setTimeout(() => {
@@ -90,6 +91,7 @@ const Hero = ({ ctaRef }: { ctaRef?: React.Ref<HTMLButtonElement> }) => {
     }, transitionDuration);
   };
   const handleNext = () => {
+    if (isTransitioning) return;
     setIsTransitioning(true);
     setPrevImage(slides[current].image);
     setTimeout(() => {
@@ -107,7 +109,7 @@ const Hero = ({ ctaRef }: { ctaRef?: React.Ref<HTMLButtonElement> }) => {
   }, [current]);
 
   return (
-    <section className="relative min-h-screen bg-black text-white overflow-hidden">
+    <section className="relative min-h-screen bg-gray-950 text-white overflow-hidden">
       {/* Background Images with fade transition */}
       <div className="absolute inset-0">
         {/* Previous image (fade out) */}
@@ -129,7 +131,7 @@ const Hero = ({ ctaRef }: { ctaRef?: React.Ref<HTMLButtonElement> }) => {
 
       {/* Content */}
       <div className="relative z-10 max-w-7xl mx-auto px-4 py-32">
-        <div className="max-w-3xl min-h-[350px] flex flex-col justify-center transition-opacity duration-500" style={{ opacity: isTransitioning ? 0 : 1 }}>
+        <div className="max-w-3xl min-h-[350px] flex flex-col justify-center transition-all duration-500" style={{ opacity: isTransitioning ? 0 : 1 }}>
           <h1 className="text-5xl md:text-7xl font-bold leading-tight mb-8">
             {slide.title}
           </h1>
