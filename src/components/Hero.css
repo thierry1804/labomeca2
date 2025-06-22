@@ -1,0 +1,32 @@
+/* Custom styles for Slick Carousel in Hero component */
+.slick-dots {
+  bottom: 120px !important;
+}
+
+.slick-dots li button:before {
+  color: white !important;
+  opacity: 0.3 !important;
+}
+
+.slick-dots li.slick-active button:before {
+  color: #F67122 !important;
+  opacity: 1 !important;
+}
+
+/* Override slick default styles for better integration */
+.slick-slider {
+  height: 100vh;
+}
+
+.slick-list,
+.slick-track {
+  height: 100%;
+}
+
+.slick-slide {
+  height: 100vh;
+}
+
+.slick-slide > div {
+  height: 100%;
+} 

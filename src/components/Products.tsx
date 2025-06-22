@@ -1,4 +1,3 @@
-import React from 'react';
 import { ArrowRight } from 'lucide-react';
 import groupe from '../assets/groupe-installation.jpg';
 import usinage from '../assets/usinage-cnc.jpg';
