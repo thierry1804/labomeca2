@@ -22,7 +22,9 @@ const ContactPage = () => {
                             <Phone className="w-8 h-8 text-[#F67122] mt-1" />
                             <div>
                                 <div className="font-bold text-lg mb-1 text-[#F67122]">TELEPHONE :</div>
-                                <div className="text-gray-200">(+261) 32 05 440 65</div>
+                                <div className="text-gray-200">(+261) 20 76 441 54/57</div>
+                                <div className="text-gray-200">(+261) 32 07 251 32</div>
+                                <div className="text-gray-200">(+261) 32 05 440 02</div>
                             </div>
                         </div>
                         <div className="flex items-start gap-5">
