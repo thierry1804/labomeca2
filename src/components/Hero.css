@@ -13,6 +13,9 @@
   opacity: 1 !important;
 }
 
+.slick-dots li.slick-active .custom-dot {
+  background-color: #F67122;
+}
 /* Override slick default styles for better integration */
 .slick-slider {
   height: 100vh;

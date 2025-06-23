@@ -182,10 +182,11 @@ const Hero = ({ ctaRef }: { ctaRef?: React.Ref<HTMLButtonElement> }) => {
       <div
         style={{
           position: 'absolute',
-          bottom: '5rem',
-          width: '100%',
+          bottom: '3rem',
+          right: '4rem',
+          width: 'auto',
           display: 'flex',
-          justifyContent: 'center',
+          justifyContent: 'flex-end',
           alignItems: 'center',
           zIndex: 20,
         }}
@@ -206,7 +207,7 @@ const Hero = ({ ctaRef }: { ctaRef?: React.Ref<HTMLButtonElement> }) => {
       </div>
     ),
     customPaging: (i: number) => (
-      <div className="w-3 h-3 rounded-full bg-white/30"></div>
+      <div className="w-3 h-3 rounded-full bg-white/30 custom-dot"></div>
     ),
   };
 
